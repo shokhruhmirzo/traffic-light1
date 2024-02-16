@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    background: url(/img/asphalt2.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50px;
+}
+
+.wrapper{
+    margin-top: 50px;
+    width: 145px;
+    height: 250px;
+    background: #212020;
+    margin-left: 200px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.wrapper::before{
+    content: '';
+    width: 30px;
+    height: 90px;
+    background: #212020;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+}
+
+
+.red{
+    position: relative;
+    background: #ded5d5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: 10px;
+    left: 8px;
+}
+
+.yellow{
+    position: relative;
+    background: #ded5d5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: 15px;
+    left: 8px;
+}
+
+.green{
+    position: relative;
+    background: #ded5d5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: 25px;
+    left: 8px;
+}
+
+.qizil{
+    background: red;
+}
+
+.sariq{
+    background: yellow;
+}
+
+.yashil{
+    background: green;
+}
+
+.peshoxod{
+    width: 140px;
+    height: 140px;
+    background: #212020;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 600px;
+    margin-top: 173px;
+    margin-right: 50px;
+}
+
+.person{
+    transform: translateY(170px);
+    width: 200px;
+    height: 250px;
+    transition: 7s ease;
+}
+
+.peshoxod img{
+    width: 70px;
+    height: 70px;
+}
+
+.peshoxod::before{
+    content: '';
+    width: 30px;
+    height: 90px;
+    background: #212020;
+    position: absolute;
+    top: 130px;
+}
+
+.clock{
+    padding: 10px;
+    background: #212020;
+    color: white;
+    margin-left: 20px;
+    border-radius: 20px;
+    .span{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+.car{
+    width: 400px;
+    margin-top: 80px;
+    height: 200px;
+    transition: 7s ease;
+}
