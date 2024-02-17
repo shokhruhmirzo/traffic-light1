@@ -64,3 +64,22 @@ setInterval(() => {
         count = 0
     }
 },1000)
+
+window.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.code === 'KeyU') {
+        event.preventDefault();
+        alert('ctrl + U bosish mumkinmas !');
+    }
+});
+
+window.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.shiftKey && event.code === 'KeyI') {
+        event.preventDefault(); 
+        alert('ctrl + shift + i bosish mumkinmas !');
+    }
+});
+
+document.addEventListener('contextmenu', function (p) {
+    p.preventDefault();
+    alert("Kod ni ko'chirish mumkinmas !!!");
+});
